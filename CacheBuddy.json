@@ -1,0 +1,210 @@
+{
+  "id": "com.rohitchouhan.sap.cachebuddy",
+  "version": "1.0.0",
+  "name": "CacheBuddy",
+  "description": "CacheBuddy is a simple cache memory component for SAC applications. It allows you to store and retrieve data in a cache memory data.",
+  "newInstancePrefix": "CacheBuddy",
+  "vendor": "rohitchouhan.com",
+  "eula": "Rohit Chouhan",
+  "license": "MIT",
+  "icon": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/CacheBuddy@1.0.0/icon.png",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-rohitchouhan-sap-cachebuddy",
+      "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/CacheBuddy@1.0.0/dist/CacheBuddy.bundle.js",
+      "integrity": "sha384-QZPGqyn9xxQ/l4SNiAce2J89K0kx2DumurL5eDscGPBkEEbbc9cFOAr65x0OCZag",
+      "ignoreIntegrity": false
+    },
+    {
+      "kind": "builder",
+      "tag": "com-rohitchouhan-sap-cachebuddy-builder",
+      "url": "https://cdn.jsdelivr.net/gh/SAP-Custom-Widget/CacheBuddy@1.0.0/dist/CacheBuddy.bundle.js",
+      "integrity": "sha384-QZPGqyn9xxQ/l4SNiAce2J89K0kx2DumurL5eDscGPBkEEbbc9cFOAr65x0OCZag",
+      "ignoreIntegrity": false
+    }
+  ],
+  "imports": [
+    "datasource"
+  ],
+  "properties": {},
+  "methods": {
+    "setNumberCacheMemory": {
+      "description": "Sets a numeric value (integer or float) in cache memory.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "description": "Numeric value to store in the cache."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "getNumberCacheMemory": {
+      "description": "Retrieves a numeric value from cache memory by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        }
+      ],
+      "returnType": "number"
+    },
+    "setStringCacheMemory": {
+      "description": "Stores a string value in the cache.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "description": "String value to store in the cache."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "getStringCacheMemory": {
+      "description": "Retrieves a string value from cache memory by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        }
+      ],
+      "returnType": "string"
+    },
+    "setBooleanCacheMemory": {
+      "description": "Stores a boolean value in the cache.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        },
+        {
+          "name": "value",
+          "type": "boolean",
+          "description": "Boolean value to store in the cache."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "getBooleanCacheMemory": {
+      "description": "Retrieves a boolean value from cache memory by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "setSelectionCacheMemory": {
+      "description": "Stores an selection in the cache.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        },
+        {
+          "name": "value",
+          "type": "Selection",
+          "description": "Selection value to store in the cache."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "getSelectionCacheMemory": {
+      "description": "Retrieves an selection from cache memory by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        }
+      ],
+      "returnType": "Selection"
+    },
+    "setArrayCacheMemory": {
+      "description": "Stores an array in the cache.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        },
+        {
+          "name": "value",
+          "type": "string[]",
+          "description": "Array value to store in the cache."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "getArrayCacheMemory": {
+      "description": "Retrieves an array from cache memory by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        }
+      ],
+      "returnType": "string[]"
+    },
+    "getCacheMemory": {
+      "description": "Retrieves raw cached string value by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory."
+        }
+      ],
+      "returnType": "string"
+    },
+    "getAllCacheMemory": {
+      "description": "Retrieves all cache memory as a JSON string.",
+      "returnType": "Selection"
+    },
+    "deleteCacheMemory": {
+      "description": "Deletes a specific cache entry by ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier for the cache memory to delete."
+        }
+      ],
+      "returnType": "boolean"
+    },
+    "deleteAllCacheMemory": {
+      "description": "Deletes all entries from the cache memory.",
+      "returnType": "boolean"
+    },
+    "existCacheMemory": {
+      "description": "Checks whether a cache entry exists for the given ID.",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Unique identifier to check in cache memory."
+        }
+      ],
+      "returnType": "boolean"
+    }
+  },
+  "events": {}
+}
