@@ -4,6 +4,7 @@ The CacheBuddy custom widget for SAP Analytics Cloud is designed to offer powerf
 ![Screenshot](https://github.com/user-attachments/assets/d665e48c-01ec-4649-af1d-20fc7e45d464)
 
 ### Installation
+<a target="_blank" href="https://sap-custom-widget.rohitchouhan.com/?dl=CacheBuddy"><img width="150" src="https://raw.githubusercontent.com/SAP-Custom-Widget/sap-custom-widget.github.io/main/download.png"/></a>
 - Download the `CacheBuddy.json` file from the URLs specified in the webcomponents property of the JSON.
 - Go to your SAC Portal, select Analytic Application from the left side bar, and then go to the Custom Widget tab.
 - Click on the + icon on the right side and select the `CacheBuddy.json` file that you downloaded.
